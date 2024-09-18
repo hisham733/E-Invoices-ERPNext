@@ -113,7 +113,7 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
     - `git clone https://github.com/hisham733/E-Invoices-integration.git`
 
 2. Navigate to the cloned folder.
-    - `cd E-Invoice_integration`
+    - `cd E-Invoices-integration`
 
 3. In `enx-example`, you can change the variables that would be used in this installation process to your preference such as the following:
     - Server port to host ERPNext,`ERPNEXT_SERVER_PORT`. Default is `8000`.
