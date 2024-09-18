@@ -141,7 +141,7 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
     - If you face `no such container` error, try with `docker logs project1-site-creator_1 -f` or `docker logs project1_site-creator_1 -f`.
 
 7. update ERPNext in your Docker container, use the `docker cp` command to copy the folder into the container, specifying the correct container name or ID and destination.
-    - For example, `docker cp erpnext project2-erpnext-python-1:/home/frappe/frappe-bench/apps`
+    - For example, `docker cp erpnext project1-erpnext-python-1:/home/frappe/frappe-bench/apps`
     - - If you face `no such container` error, try with `docker cp erpnext project1-erpnext-python_1:/home/frappe/frappe-bench/apps` or `docker cp erpnext project1_erpnext-python_1:/home/frappe/frappe-bench/apps`
 
 7. After the `<project_name>-site-creator-1` container display `Scheduler is disabled`, login to `<project_name>-erpnext-python-1` container. Use `docker exec -it --user root <project_name>-erpnext-python-1 /bin/bash` to login into this container as a root user.
