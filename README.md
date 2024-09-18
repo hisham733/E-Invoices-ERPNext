@@ -110,7 +110,7 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
 ### 5. Setup
 
 1. Clone this repo.
-    - `git clone https://github.com/hisham733/E-Invoice_integration`
+    - `https://github.com/hisham733/E-Invoices-integration.git`
 
 2. Navigate to the cloned folder.
     - `cd E-Invoice_integration`
