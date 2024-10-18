@@ -758,8 +758,7 @@
    "oldfieldname": "charge",
    "oldfieldtype": "Link",
    "options": "Sales Taxes and Charges Template",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "column_break_38",
@@ -774,13 +773,12 @@
    "print_hide": 1
   },
   {
-   "default": "01",
+   "description": "For API E_Invoice (01,02,03,04,...)",
    "fieldname": "tax_category",
    "fieldtype": "Link",
    "label": "Tax Category",
    "options": "Tax Category",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "section_break_40",
@@ -1613,19 +1611,19 @@
    "options": "01\n02\n03\n04"
   },
   {
-   "default": "96099",
+   "description": "Ex. 96099",
    "fieldname": "msic_codes",
    "fieldtype": "Data",
    "label": "(MSIC) Codes"
   },
   {
-   "default": "W10-1808-32000489",
+   "description": "Ex. W10-1808-32000489",
    "fieldname": "tourism_tax_registration",
    "fieldtype": "Data",
    "label": "Tourism Tax Registration"
   },
   {
-   "default": "762673792005",
+   "description": "Ex. 762673792005",
    "fieldname": "additional_document_reference",
    "fieldtype": "Data",
    "label": "Additional Document Reference"
@@ -1667,10 +1665,11 @@
    "label": "Supplier State"
   },
   {
-   "fetch_from": "customer_address.state_codes",
+   "description": "01 Johor, 02 Kedah, 03 Kelantan, 04 Melaka, 05 Negeri Sembilan, 06 Pahang, 07 Pulau Pinang, 08 Perak, 09 Perlis, 10 Selangor, 11 Terengganu, 12 Sabah, 13 Sarawak, 14 Wilayah Persekutuan Kuala Lumpur, 15 Wilayah Persekutuan Labuan, 16 Wilayah Persekutuan Putrajaya, 17 Not Applicable.",
    "fieldname": "customer_state_code",
-   "fieldtype": "Data",
-   "label": "Customer State Code "
+   "fieldtype": "Select",
+   "label": "Customer State Code ",
+   "options": "01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15\n16\n17"
   },
   {
    "fetch_from": "customer_address.pincode",
@@ -1685,13 +1684,13 @@
    "label": "Customer Phone"
   },
   {
-   "default": "C5865317010",
+   "description": "Ex. C5865317010",
    "fieldname": "customer_tin",
    "fieldtype": "Data",
    "label": "Customer TIN"
   },
   {
-   "default": "199201002549",
+   "description": "Ex. 199201002549",
    "fieldname": "customer_brn",
    "fieldtype": "Data",
    "label": "Customer BRN"
@@ -1723,13 +1722,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "F788577060",
+   "description": "Ex. E788577060",
    "fieldname": "supplier_tin",
    "fieldtype": "Data",
    "label": "Supplier TIN"
   },
   {
-   "default": "198901002487",
+   "description": "Ex. 098901002487",
    "fieldname": "supplier_brn",
    "fieldtype": "Data",
    "label": "Supplier BRN"
@@ -1772,7 +1771,7 @@
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2024-09-15 22:43:14.734214",
+ "modified": "2024-10-17 12:08:47.738715",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice",
